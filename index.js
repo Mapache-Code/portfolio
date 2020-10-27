@@ -3,6 +3,7 @@ window.onload = () => {
   if (width <= "426") {
     const projects = document.querySelectorAll(".noShow");
     projects.forEach((p) => {
+      p.classList.remove("active");
       p.classList.remove("noShow");
     });
   }
